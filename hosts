@@ -14,25 +14,9 @@
 localhost
 3.15.229.55
 
-[kubemaster]
-
-192.168.33.135 ansible_ssh_user=ubuntu ansible_ssh_password=ubuntu
-
-#192.168.33.110 ansible_ssh_user=ubuntu ansible_ssh_password=ubuntu
-#node1 ansible_ssh-host=192.168.33.100
-
 [appservers]
-3.15.229.55
+172.31.4.121
 
-
-[webserver]
-web[01:10].example.com
-
-[db]
-192.168.33.160 ansible_ssh_user=ubuntu ansible_ssh_password=ubuntu
-
-[web]
-192.168.33.26 ansible_ssh_user=vagrant ansible_ssh_password=vagrant
 #192.168.33.210 
 
 #[windows]

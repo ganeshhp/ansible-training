@@ -2,6 +2,7 @@
 - hosts: localhost
   remote_user: ubuntu
   become: true
+  connection: local
   gather_facts: false
   tasks:
   - name: clear the environment
@@ -9,7 +10,7 @@
      name: petclinic.war
      state: absent
   - name: download package from artifactory server
-    command: wget http://34.93.116.104:8081/artifactory/repo1/petclinic.war
+    command: curl -uadmin:AP9pW5Vp6ysjvvTVkwBgwUPsotX -O "http://35.232.102.242:8081/artifactory/repo1/petclinic.war"
 
 - hosts: appservers
   remote_user: ubuntu
@@ -18,7 +19,7 @@
   tasks:
   - name: deploy war file to server
     copy: 
-     src: /home/ubuntu/petclinic.war 
+     src: ./petclinic.war 
      dest: /opt/tomcat/webapps/petclinic.war
   - name: start app server
     command: sh /opt/tomcat/bin/catalina.sh start
