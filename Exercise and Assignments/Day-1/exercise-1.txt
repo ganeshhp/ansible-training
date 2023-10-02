@@ -28,7 +28,7 @@ $ sudo pip3 install 'ansible==2.9.1'
 
 $ ansible --version
 
-### or we can use the YUM package manager to install ansible. this process will install the latest version of ansible.
+## or we can use the YUM package manager to install ansible. this process will install the latest version of ansible.
 
 $ sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
 $ sudo yum update -y
@@ -43,7 +43,7 @@ $ cd /etc/ansible
 
 ## here you have the required ansible.cfg and inventory file.
 
-# let's open the ansible.cfg file
+## let's open the ansible.cfg file
 
 $ vi ansible.cfg
 
