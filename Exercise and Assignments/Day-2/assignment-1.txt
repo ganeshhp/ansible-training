@@ -1,0 +1,9 @@
+create a file and write ad-hoc commands to,
+
+1) install apache web server on remote host (package name is httpd). identify the module to install a package, supply the required arguments.
+
+2) start the service for the installed web server application. Make it sutomatic to start at boot.
+
+3) create a HTML file (index.html). Deploy this file (index.html) to the web server. 
+
+4) restart the web service.

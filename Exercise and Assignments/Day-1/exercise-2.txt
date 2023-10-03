@@ -55,12 +55,4 @@ ansible-connection
 ansible-galaxy      
 ansible-pull
 
-## first command to look at
-$ ansible-console -i hosts --connection local --become
 
-## this will open a REPL console to run tasks on the targetted hosts under the hosts inventory
-## try running help on the console
-
-$ help
-
-## now try checking usage of ansible-doc command. this command gives documentation about built-in ansible modules.
