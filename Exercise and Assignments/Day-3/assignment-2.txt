@@ -1,0 +1,6 @@
+write a playbook to install a LAMP server on the remote host.
+
+1) task to install apache web server.
+2) task to install mysql server application.
+3) task to install php on remote host.
+4) start services for webserver and database.
