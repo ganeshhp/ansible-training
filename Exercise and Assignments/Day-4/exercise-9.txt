@@ -16,7 +16,7 @@ $ vi playbook.yml
 
 $ vi playbook-loop.yml
 
-    - name: Install aptitude using apt
+    - name: Update repo cache for yum repo
       yum: 
          name: '*' 
          state: latest 
@@ -28,7 +28,7 @@ $ vi playbook-loop.yml
          name: "{{ item }}" 
          state: latest 
          update_cache: yes
-      loop: [ 'apt-transport-https', 'ca-certificates', 'curl', 'software-properties-common', 'python3-pip', 'virtualenv', 'python3-setuptools']
+      loop: [ 'ca-certificates', 'curl', 'python3-pip', 'virtualenv', 'python3-setuptools']
 
 ---------------------------
 
