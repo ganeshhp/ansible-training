@@ -5,6 +5,7 @@ $ vi playbook.yml
 - name: ensure a list of packages installed
   yum:
     name: "{{ packages }}"
+    use_backend: dnf
   vars:
     packages:
     - httpd
