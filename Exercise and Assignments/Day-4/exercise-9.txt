@@ -50,7 +50,24 @@ $ vi playbook-loop.yml
 
 $ ansible-playbook playbook.yml --step
 
+-----------------------------
 
+## using loop to call variables from play
+
+vars:
+  packages:
+  - nano
+  - httpd
+  - httpd-tools
+  - wget
+
+tasks:
+- name: install packages using loop
+  yum:
+    - name: "{{item}}"
+      state: present
+      user_backend: dnf
+  loop: "{{packages}}"
 ----------------------------
 ## in case of afailed playbook execution, we can enable the retry parameter in the ansible.cfg, so only failed hosts can be implemented again.
 
