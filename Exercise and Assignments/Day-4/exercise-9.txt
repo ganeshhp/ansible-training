@@ -56,10 +56,10 @@ $ ansible-playbook playbook.yml --step
 
 vars:
   packages:
-  - nano
-  - httpd
-  - httpd-tools
-  - wget
+    - nano
+    - httpd
+    - httpd-tools
+    - wget
 
 tasks:
 - name: install packages using loop
