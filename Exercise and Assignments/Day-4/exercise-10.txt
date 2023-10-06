@@ -24,7 +24,7 @@ serial: 1
 tasks:
 -  name: take an action on certain conditional fulfilment
    when: ansible_facts['os_family'] == "RedHat"
-   command: '/sbin/shutdown –t now'
+   command: '/usr/bin/pwd'
 
 or,
 
