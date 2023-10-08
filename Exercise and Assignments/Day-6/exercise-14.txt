@@ -1,0 +1,54 @@
+## install Ansible Tower
+## installation of Tower is to be done on the VM that has 8GB RAM, 2vCPUs.
+
+## 1)Installing the Ansible Tower automation platform needs to have the ansible-core automation engine already installed. 
+##So, let’s install Ansible-core first.
+
+$ ansible --version
+
+## if Anibsle is not installed, install it by following the steps prompted on the screen.
+
+$ ansible --version
+
+## 2)Let’s install the pre-requisites, rsync, wget
+
+$ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+$ sudo dnf install rsync wget -y
+
+## Check the python interpreter version.
+
+$ python -V
+
+## if you get error accessing the python binary, set the symlink with the correct python version binary.
+
+$ sudo ln -s /usr/bin/python3.11 /usr/bin/python
+
+## try running the version command after setting the symlink.
+
+## 3)Now, download the latest installation package from the repository at, https://access.redhat.com/downloads/content/480/ver=2.4/rhel---8/2.4/x86_64/product-software
+
+## Download the specific Ansible Tower package that suits your operating system (RHEL8).
+
+## Chekc the download at https://access.cdn.redhat.com/content/origin/files/sha256/eb/eb4573d15785d441782279ac7404d763e3905e7032f38d8bfa40bc75c68f9ea1/ansible-automation-platform-setup-2.4-2.tar.gz?user=be1b870859a8b70808487e3a72c5a4da&_auth_=1696806436_75e0ee7e711b51eeb95d82858f7141f4
+
+## 4)Extract the tar file with,
+
+$ tar -zxvf ansible-tower-setup-bundle-3.6.2-1.tar.gz
+
+## Change directory to the extracted folder where the setup file is located.
+
+$ cd ansible-tower-setup-bundle-3.6.2-1
+
+## List file in this folder.
+
+$ ls -l
+$ vi inventory
+
+## in the inventory file, update the password for admin_password, pg_password and rabbitmq_password.
+## save the file and quit.
+
+## now, run the setup.sh script file. this will start the installation process.
+
+$ sudo ./setup.sh
+
+## wait for the installation process to finish. 
