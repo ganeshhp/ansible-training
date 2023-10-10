@@ -1,0 +1,27 @@
+## First thing that we will have to do is add the Ansible Infra code to a SCM repository. (Playbook / Roles). Create a new repository on GitHub and PUSH the Ansible code to the repo.
+
+## Login to the Tower Automation platform
+## Let's browse through the platform.
+## On the left hand side we have,
+
+1) View Section
+2) Resource Section:
+	a) templates : check the default template
+	b) credentials: check default credentials for machine
+	c) projects: check the default project
+	d) Inventory: check the default inventory
+	e) Inventory Scripts
+3) Access Section
+	a) organizations: check the default organization
+	b) users: default admin user
+	c) teams
+4) administration section
+
+## First create a new organization
+## create new inventory
+## create new user
+## create a new team
+## add users to the team
+## create New Project
+## link the SCM repository to the project and run the SCM sync job.
+## find the playbook file from the 
