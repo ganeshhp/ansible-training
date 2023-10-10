@@ -1,0 +1,55 @@
+## let's start with resource section and configure resources on the Ansible Tower Web UI.
+
+1) create new inventory
+  - add inventory
+  - inventory name
+  - org- default
+  - description
+  - save
+  - add host
+  - host-name : Node1
+  - save
+2) create Credentials
+  - new credentials
+  - credentials name
+  - select org
+  - creadentials type (Machine)
+  - SSH User details
+  - SSH  password
+  - SSH Private Key
+  - privilage escalation method
+  - privilage escalation password
+  - privilage escalation user
+  - save
+
+3) create New Project
+
+  - project name
+  - description
+  - organization
+  - SCM type
+  - SCM URL (GitHub)
+  - SCM branch / SCM credentials
+  - SCM update options
+  - save
+
+4) link the SCM repository to the project and run the SCM sync job.
+
+5) On the GiutHub repository make sure you have the required playbooks available.
+
+6) Create Templates
+  - Add Job Template
+  - Template name
+  - description
+  - job type (run, check, etc.)
+  - inventory
+  - Select added inventory
+  - select project
+  - select credentials
+  - select playbook from the list
+  - job tags
+  - skip tags
+  - verbosity
+  - extra credentials
+  - options --> enable privilage esclations
+  - RUN the job.

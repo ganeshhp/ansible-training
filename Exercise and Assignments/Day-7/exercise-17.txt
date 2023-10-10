@@ -1,0 +1,16 @@
+## API section:
+## working with Ansible APIs
+## API can be accessed using CURL or web Browser
+## install 'perl-JSON-PP' package using,
+
+$ sudo yum install perl-JSON-PP
+
+$ https://localhost/api/v2
+
+$ curl -X GET --user admin:password123 https://localhost/api/v2/ -ks | json_pp
+
+$ curl -X GET --user admin:password123 https://loclahost/api/v2/job_templates/?name="Demo Job Template" --ks | json_pp | less
+
+----------------
+
+## Managing Access Control
