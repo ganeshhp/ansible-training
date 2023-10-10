@@ -14,9 +14,9 @@ tasks:
   - packages
 
 - name: deploy templates
-  template:
-    src: templates/src.j2
-    dest: /etc/foo.conf
+  copy:
+    src: index.html
+    dest: /var/wwww/html/index.html
   tags:
   - configuration
 
