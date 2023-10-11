@@ -1,2 +1,42 @@
 ## MAnaging Access Section
 
+## first get to the Access section
+## Let's create an Organization object
+
+1) click on organizations
+2) click on add org.
+3) name the org
+4) description
+5) max hosts
+6) save
+
+## adding and managing user
+
+1) click on users
+2) add user
+3) first name + Last name
+4) select org
+5) add email
+6) add username
+7) add password
+8) select user type
+9) save
+
+## creating team to manage user access
+
+1) select teams
+2) add team
+3) team name
+4) description
+5) select org
+6) save
+7) click on users button
+8) add users to the team
+9) Permissions
+ - Job Template -> assign role --> save
+ - inventory --> assign role --> save
+ - projects --> assign role --> save
+ - credentials --> assign role --> save
+ - organization --> assign role --> save
+
+10) logg off and try login with new user and check the access

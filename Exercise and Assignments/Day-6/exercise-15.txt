@@ -17,11 +17,3 @@
 	c) teams
 4) administration section
 
-## First create a new organization
-## create new inventory
-## create new user
-## create a new team
-## add users to the team
-## create New Project
-## link the SCM repository to the project and run the SCM sync job.
-## find the playbook file from the 
