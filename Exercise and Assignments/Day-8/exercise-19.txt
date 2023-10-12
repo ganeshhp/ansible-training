@@ -1,0 +1,29 @@
+## understand how to use Survey functionality in the Job Template
+## navigate to templates
+# after creating and saving the template, look for the surveys option button.
+## click on surveys, here enter the question, this is what you want to display on the screen while accepting the vairable value.
+# select answer type (text/ password)
+## enable the survey.
+
+
+
+------
+
+## Working with Job Schedules
+
+
+-------------
+
+# Understanding Notifications
+
+
+
+--------------
+## Ansible Tower - High availability with clustering
+
+
+
+
+---------------
+
+## Workflow templates
